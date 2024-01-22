@@ -1,0 +1,27 @@
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 10% 1fr 8%;
+    height: 100%;
+}
+
+.grid-item1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+p{
+    margin: 0px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
