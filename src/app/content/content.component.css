@@ -1,17 +1,58 @@
 @font-face {
     font-family: 'Poppings';
-    src: url('../../assets/fonts/Poppins/Poppins-Black.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-Light.ttf');
 }
 
 @font-face {
     font-family: 'Open-sans';
-    src: url('../../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans-Light.ttf');
 }
 
 main{
-    display: flex;    
+    display: flex; 
+    flex-direction: column;   
 }
 
 img{
     width: 100%;
+    margin-bottom: 3rem;
+}
+
+p{
+    color: white;
+    text-align: center;
+    word-wrap: normal;
+}
+
+header > p{
+    font-size: 7vw;
+    font-family: 'Poppings';
+    font-weight: 600;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0px;
+}
+
+section > p{
+    font-family: 'Open-sans';
+    font-weight: 400;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    font-size: 4.5vw;
+    margin-bottom: 2rem;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border: 0px solid;
+    border-radius: 4rem;
+    width: 45vw;
+    height: 10vw;
+    color: var(--Violet);
+    box-shadow: 2px 3px 8px rgba(75, 74, 74, 0.575);
+    font-size: 3.5vw;
 }
