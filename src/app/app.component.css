@@ -1,7 +1,7 @@
 
 .grid-container{
     display: grid;
-    grid-template-rows: 10% 1fr 8%;
+    grid-template-rows: 14vw 1fr 3rem;
     height: 100%;
 }
 
@@ -9,8 +9,25 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-left: 1.5rem;
+}
+
+.grid-item2{
+    padding-top: 8vw;
+    margin-left: 9vw;
+    margin-right: 9vw;
+}
+
+nav{
+    display: flex;
+    align-items: end;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+img{
+    height: 7vw;
+    width: 100%;
+    object-fit: contain;
 }
 
 p{
@@ -18,10 +35,65 @@ p{
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 2vw; 
     text-align: center; 
+    color: hsl(0, 0%, 100%); 
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(180, 57%, 53%); 
+}
+
+
+/* for screens => 481px */
+@media (min-width : 481px) and (max-width : 900px) {
+    
+    .grid-container{
+        display: grid;
+        grid-template-rows: 11vw 1fr 4.5vw;
+    }
+
+    img{
+        height: 5.5vw;
+    }
+
+    .attribution{
+        font-size: 1vw;
+    }
+}
+
+/* for screens => 601px */
+@media (min-width : 601px) {
+
+    .attribution{
+        font-size: 0.5rem;
+    }
+}
+
+
+/* for screens => 901px */
+@media (min-width : 901px) {
+    
+    .grid-container{
+        display: grid;
+        grid-template-rows: 6rem 1fr 3rem;
+    }
+
+    nav{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .grid-item2{
+        margin-left: 4.8rem;
+        margin-right: 4.8rem;
+    }
+
+    img{
+        height: 3rem;
+    }
+
+    .attribution{
+        font-size: 0.8rem;
+    }
 }

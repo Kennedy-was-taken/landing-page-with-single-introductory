@@ -1,14 +1,17 @@
+@font-face {
+    font-family: 'Poppings';
+    src: url('../../assets/fonts/Poppins/Poppins-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Open-sans';
+    src: url('../../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
 main{
-    display: flex;
-    align-items: center;
-    
+    display: flex;    
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+img{
+    width: 100%;
 }

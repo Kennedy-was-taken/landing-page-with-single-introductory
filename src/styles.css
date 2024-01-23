@@ -1,3 +1,10 @@
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+}
+
 html, body{
     height: 100%;
     width: 100%;
@@ -5,6 +12,17 @@ html, body{
 
 body{
     margin: 0px;    
+    background-image: url('./assets/images/bg-mobile.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: var(--Violet);
+}
+
+/* for screen => 481px */
+@media (min-width : 481px) {
+    
+    body{
+        background-image: url('./assets/images/bg-desktop.svg');
+        background-size: fill;
+    }
 }
