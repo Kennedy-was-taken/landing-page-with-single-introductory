@@ -5,9 +5,8 @@
 
 @font-face {
     font-family: 'Open-sans';
-    src: url('../../assets/fonts/Open_Sans/static/OpenSans-Regular.ttf');
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans-Light.ttf');
 }
-
 
 .container, main{
     display: flex; 
@@ -42,7 +41,6 @@ header > p{
 
 section > p{
     font-family: 'Open-sans';
-    font-weight: 400;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
     font-size: 4.5vw;
@@ -57,24 +55,41 @@ section > p{
 button{
     border: 0px solid;
     border-radius: 4rem;
-    width: 45vw;
+    width: 65vw;
     height: 10vw;
     color: var(--Violet);
     box-shadow: 2px 3px 8px rgba(75, 74, 74, 0.575);
     font-size: 3.5vw;
 }
 
-button:hover{
-    background-color: var(--Soft-Magenta);
+.icon-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 12vw;
+}
+
+fa-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
     color: white;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
+    border: 1px solid white;
+    height: 9.5vw;
+    width: 9.5vw;
+    border-radius: 8.5vw;
+    margin-right: 3vw;
 }
 
 /* for screens => 481px */
 @media (min-width : 481px)  {
     
+    .container{
+        display: grid;
+        grid-template-rows: 92% 8%;
+    }
+
     main{
         display: grid;
         grid-template-columns: 60% 40%;
@@ -115,9 +130,39 @@ button:hover{
     }
 
     button:hover{
-        transition-property: none;
-        transition-duration: unset;
-        transition-timing-function: unset;
+        background-color: var(--Soft-Magenta);
+        color: white;
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        cursor: pointer;
+    }
+
+    .button-container{
+        justify-content: left;
+    }
+
+    .icon-container{
+        margin-top: 0px;
+        justify-content: end;
+    }
+    
+    fa-icon{
+        font-size: 1.2vw;
+        height: 2.5vw;
+        width: 2.5vw;
+        border-radius: 1.5vw;
+        border: 1px solid white;
+    }
+
+    fa-icon:hover{        
+        color: var(--Soft-Magenta);
+        border: 1px solid var(--Soft-Magenta);
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        cursor: pointer;
+        
     }
 
 }
@@ -134,6 +179,18 @@ button:hover{
     
     .right-container{
         padding-top: 3rem;
+    }
+
+    header > p{
+        font-size: 2vw;
+    }
+
+    section > p{
+        font-size: 1vw;
+    }
+
+    .button-container{
+        margin-top: 1.5vw;
     }
 
 }

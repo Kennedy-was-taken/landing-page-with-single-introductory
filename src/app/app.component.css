@@ -50,7 +50,15 @@ p{
     
     .grid-container{
         display: grid;
-        grid-template-rows: 11vw 1fr 4.5vw;
+        grid-template-rows: 15% 1fr 5%;
+    }
+
+    .grid-item2{
+        padding-top: 6vw;
+    }
+
+    footer{
+        margin-top: 1vw;
     }
 
     img{
@@ -73,12 +81,12 @@ p{
 
 /* for screens => 901px */
 @media (min-width : 901px) {
-    
+
     .grid-container{
         display: grid;
-        grid-template-rows: 6rem 1fr 3rem;
+        grid-template-rows: 15% 1fr 5%;
     }
-
+    
     nav{
         margin-left: 4rem;
         margin-right: 4rem;
@@ -87,6 +95,7 @@ p{
     .grid-item2{
         margin-left: 4.8rem;
         margin-right: 4.8rem;
+        padding-top: 5vw;
     }
 
     img{
@@ -94,6 +103,10 @@ p{
     }
 
     .attribution{
-        font-size: 0.8rem;
+        font-size: 1vw;
+    }
+
+    footer{
+        margin-top: 1vw;
     }
 }
