@@ -1,20 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgIf } from '@angular/common';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
+import { RegisterformComponent } from './registerform/registerform.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
+import { HomedirecterComponent } from './homedirecter/homedirecter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContentComponent
+    ContentComponent,
+    RegisterformComponent,
+    LandingpageComponent,
+    HomedirecterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgIf
   ],
   providers: [],
   bootstrap: [AppComponent]

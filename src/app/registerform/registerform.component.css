@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Poppings';
+    src: url('../../assets/fonts/Poppins/Poppins-Light.ttf');
+}
+@font-face {
+    font-family: 'Open-sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans-Light.ttf');
+}
+
+main{
+    display: flex;
+    background-image: url('../../assets/images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsla(257, 37%, 37%, 0.966);
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 2px 3px 8px rgba(75, 74, 74, 0.575);
+}
+
+img{
+    display: none;
+}
+
+.line{
+    display: none;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+}
+
+p{
+    font-size: 10vw;
+    font-family: 'Poppings';
+    font-weight: 600;
+    color: white;
+    margin: 0px;
+}
+
+label{
+    color: white;
+    margin-right: 1rem;
+    font-family: 'Open-sans';
+    font-size: 4vw;
+}
+
+input{
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    color: white;
+    font-size: 3vw;
+}
+.user-container, .password-container{
+    display: flex;
+    flex-direction: row;
+}
+
+div{
+    margin-top: 6vw;
+}
+
+button{
+    border: 0px solid;
+    border-radius: 4rem;
+    width: 45vw;
+    height: 8vw;
+    color: var(--Violet);
+    box-shadow: 2px 3px 8px rgba(75, 74, 74, 0.575);
+    font-size: 3.5vw;
+    margin-top: 7vw;
+    margin-bottom: 10vw;
+}
+
+
+/* for screen => 481px */
+@media (min-width : 481px) {
+    
+    main{
+        background-image: url('../../assets/images/bg-desktop.svg');
+        background-size: fill;
+        display: grid;
+        grid-template-columns: 48% 1fr 48%;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+    }
+
+    img{
+        display: flex;
+        width: 80%;
+        padding-left: 1rem;
+        object-fit: contain;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .line{
+        display: flex;
+        height: 80%;
+        border: 2px;
+        width: 1px;
+        background-color: white;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    p{
+        margin-top: 3vw;
+        font-size: 3vw;
+    }
+
+    label{
+        font-size: 1.5vw;
+        margin-right: 1vw;
+    }
+
+    input{
+        font-size: 1.2vw;
+    }
+
+    div{
+        margin-top: 1vw;
+    }
+
+    .user-container, .password-container{
+        margin-top: 2vw;
+    }
+
+    button{
+        width: 20vw;
+        height: 3vw;
+        font-size: 1.5vw;
+        margin-top: 3.5vw;
+        margin-bottom: 5vw;
+    }
+
+    button:hover{
+        background-color: var(--Soft-Magenta);
+        color: white;
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        cursor: pointer;
+    }
+
+}
