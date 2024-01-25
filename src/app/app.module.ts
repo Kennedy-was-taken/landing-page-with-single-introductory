@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgIf } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +10,7 @@ import { ContentComponent } from './content/content.component';
 import { RegisterformComponent } from './registerform/registerform.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { HomedirecterComponent } from './homedirecter/homedirecter.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HomedirecterComponent } from './homedirecter/homedirecter.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    NgIf
+    NgIf,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

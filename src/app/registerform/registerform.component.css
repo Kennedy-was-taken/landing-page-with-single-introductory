@@ -9,6 +9,7 @@
 
 main{
     display: flex;
+    flex-direction: column;
     background-image: url('../../assets/images/bg-mobile.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -20,6 +21,27 @@ main{
     box-shadow: 2px 3px 8px rgba(75, 74, 74, 0.575);
 }
 
+.back-x{
+    display: none;
+}
+
+.back-arrow, .back-x{
+    background-color: transparent;
+    border: none;
+}
+
+fa-icon{
+    font-size: 5vw;
+    color: white;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 1rem;
+}
+
 img{
     display: none;
 }
@@ -28,7 +50,7 @@ img{
     display: none;
 }
 
-section{
+form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,10 +88,10 @@ input{
 }
 
 div{
-    margin-top: 6vw;
+    margin-top: 4vw;
 }
 
-button{
+.submit{
     border: 0px solid;
     border-radius: 4rem;
     width: 45vw;
@@ -93,6 +115,34 @@ button{
         align-items: center;
         justify-content: center;
         width: 70vw;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 90%;
+        padding-left: 2rem;
+    }
+
+    .back-arrow{
+        display: none;
+    }
+
+    .back-x{
+        display: flex;
+    }
+
+    fa-icon{
+        font-size: 2vw;
+    }
+
+    fa-icon:hover{
+        color: var(--Violet);
     }
 
     img{
@@ -102,6 +152,7 @@ button{
         object-fit: contain;
         align-items: center;
         justify-content: center;
+        margin-top: 3vw;
     }
 
     .line{
@@ -114,7 +165,7 @@ button{
         margin-right: 1rem;
     }
 
-    .form{
+    form{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -144,7 +195,7 @@ button{
         margin-top: 2vw;
     }
 
-    button{
+    .submit{
         width: 20vw;
         height: 3vw;
         font-size: 1.5vw;
@@ -152,13 +203,23 @@ button{
         margin-bottom: 5vw;
     }
 
-    button:hover{
+    .submit:hover{
         background-color: var(--Soft-Magenta);
         color: white;
         transition-property: background-color;
         transition-duration: 0.5s;
         transition-timing-function: ease;
         cursor: pointer;
+    }
+
+    @media (min-width : 900px) {
+
+        main{
+            border-top-right-radius: 2rem;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+        }
     }
 
 }

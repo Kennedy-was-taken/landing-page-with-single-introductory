@@ -19,7 +19,7 @@
 
 .grid-item3{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -62,15 +62,11 @@ p{
     
     .grid-container{
         display: grid;
-        grid-template-rows: 15% 1fr 5%;
+        grid-template-rows: 9.2vw 1fr 4vw;
     }
 
     .grid-item2{
         padding-top: 6vw;
-    }
-
-    footer{
-        margin-top: 1vw;
     }
 
     img{

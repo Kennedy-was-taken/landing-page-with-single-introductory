@@ -1,24 +1,38 @@
 <main>
-    <img src="../../assets/images/logo.svg"/>
+
+    <div class="image-container">
+
+      <button class="back-arrow" (click)="goBack()">
+        <fa-icon [icon]="['fas','angles-left']"></fa-icon>
+      </button>
+
+      <button class="back-x" (click)="goBack()">
+        <fa-icon [icon]="['fas','xmark']"></fa-icon>
+      </button>
+
+      <img src="../../assets/images/logo.svg" />
+
+    </div>
+    
 
     <div class="line"></div>
 
-    <section class="form">
+    <form #userForm = "ngForm" (ngSubmit)="onSubmit()">
         <div>
             <p>Register</p>
         </div>
 
         <div class="user-container">
-            <label>username : </label>
-            <input type="text" placeholder="kennedy"/>
+            <label for="username">username : </label>
+            <input name="username" type="text" [(ngModel)]="user.username" placeholder="kennedy" required="true"/>
         </div>
 
         <div class="password-container">
-            <label>password : </label>
-            <input type="password" placeholder="password"/>
+            <label for="password">password : </label>
+            <input name="password" type="password" [(ngModel)]="user.password" placeholder="password" required="true"/>
         </div>
 
-        <button type="button" (click)="goBack()">Register</button>
+        <button class="submit" type="submit" >Register</button>
 
-    </section>
+    </form>
 </main>
