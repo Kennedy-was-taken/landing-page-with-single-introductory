@@ -1,27 +1,58 @@
-# LandingPageWithSingleIntroductory
+# Frontend Mentor - QR code component
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+    - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Author](#author)
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### The challenge
 
-## Build
+Users should be able to:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- View the optimal layout for the page depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-## Running unit tests
+### Screenshot
+  
+   ![Full screen](./src/assets/screen-size-images/full-screen-homepage.PNG)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Links
 
-## Running end-to-end tests
+- Solution URL: [GitHub code solution URL](https://github.com/Kennedy-was-taken/landing-page-with-single-introductory)
+- Live site Url : [Vercel QR code app](landing-page-with-single-introductory.vercel.app)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+### Built with
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Grid
+- Mobile-first workflow
+- @media
+- Angularjs
+- JavaScript
+- TypeScript
+
+### What I learned
+- Throughout the development of this project, I gained valuable insights into using @media queries to provide screen support for various devices. Specifically, I set breakpoints at 374px for mobile devices and 1440px for desktop devices. However, when attempting to deploy the project on GitHub Pages, I encountered several failures.
+
+- After some consideration, I opted to switch platforms and decided to try Vercel. The experience with Vercel was seamless from start to finish. I began by setting up an account, installing the Vercel Command Line Interface (CLI), and configuring my Angular app for deployment. The deployment process involved running the 'vercel' command in the same directory as the Angular project in the terminal.
+
+- It's worth noting that, despite the availability of a graphical interface, my preferred method for deploying the app in a production environment remains using the Vercel CLI for its efficiency and control.
+
+
+## Author
+
+- Github Profile: [Kennedy-was-taken](https://github.com/Kennedy-was-taken)
+- Frontend Mentor : [@Kennedy-was-taken](https://www.frontendmentor.io/profile/Kennedy-was-taken)

@@ -113,6 +113,11 @@ button{
     border-bottom-right-radius: 1vw;
 }
 
+button:active{
+    background-color: hsla(278, 84%, 57%, 0.507);
+    border: 1px solid hsla(278, 84%, 66%, 0.055);
+    box-shadow: 0 0 9px 2px hsla(278, 84%, 66%, 0.363);
+}
 
 /* for screens => 481px */
 @media (min-width : 481px) {

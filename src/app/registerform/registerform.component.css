@@ -35,6 +35,10 @@ fa-icon{
     color: white;
 }
 
+fa-icon:active{
+    color: var(--Soft-Magenta);
+}
+
 .image-container{
     display: flex;
     flex-direction: column;
@@ -103,6 +107,10 @@ div{
     margin-bottom: 10vw;
 }
 
+.submit:active{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
 
 /* for screen => 481px */
 @media (min-width : 481px) {
