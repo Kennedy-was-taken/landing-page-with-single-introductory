@@ -19,4 +19,15 @@
       </footer>
     </div>  
   
+</div>
+
+<!-- Pop up -->
+<section *ngIf="isFeedBackVisible">
+
+  <div class="popup-container">
+
+    <p class="qoute">Successfully Registered</p>
+    <button type="button" (click)="closePopUP()">Close</button>
+
   </div>
+</section>

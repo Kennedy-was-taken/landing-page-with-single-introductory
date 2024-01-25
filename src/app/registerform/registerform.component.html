@@ -17,19 +17,19 @@
 
     <div class="line"></div>
 
-    <form #userForm = "ngForm" (ngSubmit)="onSubmit()">
+    <form [formGroup] = "userForm" (ngSubmit)="onSubmit()">
         <div>
             <p>Register</p>
         </div>
 
         <div class="user-container">
             <label for="username">username : </label>
-            <input name="username" type="text" [(ngModel)]="user.username" placeholder="kennedy" required="true"/>
+            <input name="username" type="text" [(ngModel)]="user.username" placeholder="kennedy" required/>
         </div>
 
         <div class="password-container">
             <label for="password">password : </label>
-            <input name="password" type="password" [(ngModel)]="user.password" placeholder="password" required="true"/>
+            <input name="password" type="password" [(ngModel)]="user.password" placeholder="password" required/>
         </div>
 
         <button class="submit" type="submit" >Register</button>

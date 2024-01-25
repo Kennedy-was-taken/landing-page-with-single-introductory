@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PopupService } from '../popup.service';
 import { Router } from '@angular/router';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faAnglesLeft } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-registerform',
@@ -11,28 +12,42 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './registerform.component.css'
 })
 
-export class RegisterformComponent {
+export class RegisterformComponent implements OnInit {
 
-    constructor(private library : FaIconLibrary, private popup : PopupService, private router : Router){ 
+    userForm!: FormGroup;
+
+    constructor(private fb: FormBuilder, private library : FaIconLibrary, private popup : PopupService, private router : Router){ 
       library.addIcons(faAnglesLeft, faXmark);
     }
-    
+
     //user object
     user ={
-      username : String,
-      password : String
+      username :  "",
+      password :  ''
     }
 
+    ngOnInit(): void {
+      this.userForm = this.fb.group({
+        username: ['', [Validators.required]],
+        password: ['', [Validators.required]],
+      });
+    }
+
+    //turns of the popup
     public goBack() {
-      this.popup.setVisibility();
+      this.popup.setFormVisibility(false);
       this.router.navigate(['/homedirecter']); 
     }
 
+    //turns of the popup and sets the feedback to true
     public onSubmit() : void {
-      console.log(JSON.stringify(this.user, undefined, 2));
-      this.popup.setVisibility();
-      // this.snackbar.open('Data has been successfully captured!', 'Close', {
-      //   duration: 3000});
-      this.router.navigate(['/homedirecter']); 
+      if(this.userForm.valid){
+        const formData = this.userForm.value;
+        console.log(JSON.stringify(formData, undefined, 2));
+        this.popup.setFormVisibility(false);
+        this.popup.setFeedBackVisibility(true);
+        this.router.navigate(['/homedirecter']); 
+      }
+      
     }
 }

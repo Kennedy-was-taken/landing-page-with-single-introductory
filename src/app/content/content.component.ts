@@ -22,7 +22,7 @@ export class ContentComponent implements OnInit{
     }
 
     ngOnInit(): void {
-        this.isFormVisible = this.popup.visibilityOff();
+        this.isFormVisible = this.popup.getformVisibility();
         
     }
 
