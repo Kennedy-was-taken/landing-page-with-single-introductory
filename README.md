@@ -5,7 +5,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 ## Table of contents
 
 - [Overview](#overview)
-    - [The challenge](#the-challenge)
+  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -45,11 +45,40 @@ Users should be able to:
 - TypeScript
 
 ### What I learned
-- Throughout the development of this project, I gained valuable insights into using @media queries to provide screen support for various devices. Specifically, I set breakpoints at 374px for mobile devices and 1440px for desktop devices. However, when attempting to deploy the project on GitHub Pages, I encountered several failures.
+      
+  Throughout the development of this project, I encountered various challenges and gained valuable insights.
 
-- After some consideration, I opted to switch platforms and decided to try Vercel. The experience with Vercel was seamless from start to finish. I began by setting up an account, installing the Vercel Command Line Interface (CLI), and configuring my Angular app for deployment. The deployment process involved running the 'vercel' command in the same directory as the Angular project in the terminal.
+1. Notifying User Registrations :
 
-- It's worth noting that, despite the availability of a graphical interface, my preferred method for deploying the app in a production environment remains using the Vercel CLI for its efficiency and control.
+    One notable challenge was implementing a notification system for user registrations. Overcoming this hurdle required a deep dive into the intricacies of notification creation.
+
+2. Overlapping Pages with Z-Index :
+
+    Understanding how to effectively overlap pages using z-index emerged as another pivotal aspect of the project. This presented a unique set of challenges that I successfully addressed.
+
+3. Structural Shift: Grid vs. Flex :
+
+    An important lesson learned was the significance of structuring pages using a grid system rather than relying solely on flex. This shift in approach contributed to a more organized and responsive design.
+
+4. Font Awesome Integration :
+
+    An accomplishment during this project was the successful integration of Font Awesome into the Angular application. This involved implementing icons and ensuring their functionality aligns with user interactions.
+
+5. Mobile User Interaction :
+
+    For mobile users, active events were added to buttons and fonts, enhancing user perception. This ensured a visual indication when buttons or icons were clicked on smaller screens.
+
+6. Responsive Design with Media Queries :
+
+    The implementation of media queries for specific screen sizes was crucial. A minimum width of 481px triggered a shift in structure to utilize grid, with buttons and fonts adapting their functions and incorporating hover events.
+
+7. Notification System :
+
+    The notification system, positioned on top of pages using z-index, was fine-tuned to appear for 5 seconds before gracefully disappearing. This added a dynamic and informative element to the user experience.
+
+8. Technology Stack :
+
+    The project utilized AngularJS for its directives, enabling seamless data binding to HTML elements, as well as leveraging dependency injection and routing. TypeScript played a key role, providing optional static typing and introducing the concept of classes for enhanced code organization.
 
 
 ## Author

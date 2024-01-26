@@ -29,10 +29,10 @@ export class LandingpageComponent implements OnInit{
 
     if(this.isFeedBackVisible === true){
       
-      // Set a timeout to hide the element after 10 secs
+      // Set a timeout to hide the element after 5 secs
       this.timeId = setTimeout(() => {
           this.isFeedBackVisible = false;
-        }, 10 * 1000);
+        }, 5 * 1000);
 
       this.popup.setFeedBackVisibility(this.isFeedBackVisible);
 
