@@ -1,8 +1,15 @@
+<!-- content container -->
+<!-- default is flex =< 480px -->
+<!-- default => 481px then default == grid -->
 <div class="container">
+
+  <!-- grid 1 -->
   <main>
 
+    <!-- left-side -->
     <img src="../../assets/images/illustration-mockups.svg" alt="images illustration" />
 
+    <!-- right-side -->
     <div class="right-container">
       <header>
         <p>
@@ -24,6 +31,7 @@
 
   </main>
 
+  <!-- grid 2 -->
   <section class="icon-container">
 
     <div class="round-border">
@@ -40,6 +48,7 @@
 
   </section>
 
+  <!-- register form -->
   <section class="form" *ngIf="isFormVisible">
     <app-registerform></app-registerform>
   </section>

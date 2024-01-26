@@ -1,8 +1,10 @@
+/* font to be used */
 @font-face {
     font-family: 'Open-sans';
     src: url('../../assets/fonts/Open_Sans/static/OpenSans-Light.ttf');
 }
 
+/* positioning of the popup */
 section{
     z-index: 1;
     top: 0;
@@ -13,12 +15,14 @@ section{
     justify-content: center;
 }
 
+/* how the grid and contents are displayed */
 .grid-container{
     display: grid;
     grid-template-rows: 14vw 1fr 3rem;
     height: 100%;
 }
 
+/* grids functions */
 .grid-item1{
     width: 100%;
     display: flex;
@@ -37,12 +41,7 @@ section{
     justify-content: center;
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* display setting for nav */
 nav{
     display: flex;
     align-items: end;
@@ -56,10 +55,19 @@ img{
     object-fit: contain;
 }
 
+
+/* display setting for footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 p{
     margin: 0px;
 }
 
+/* customization for the font */
 .attribution { 
     font-size: 2vw; 
     text-align: center; 
@@ -70,6 +78,7 @@ p{
     color: hsl(180, 57%, 53%); 
 }
 
+/* popups containers properties */
 .popup-container{
     display: flex;
     flex-direction: row;
@@ -89,6 +98,7 @@ p{
     box-shadow: 2px 3px 8px rgba(82, 47, 114, 0.575);
 }
 
+/* font properties */
 .qoute{
     font-family: 'Open-sans';
     font-size: 2.5vw;
@@ -97,6 +107,7 @@ p{
     color: white;
 }
 
+/* button properties */
 button{
     font-family: 'Open-sans';
     font-size: 2vw;
@@ -113,6 +124,7 @@ button{
     border-bottom-right-radius: 1vw;
 }
 
+/* click event */
 button:active{
     background-color: hsla(278, 84%, 57%, 0.507);
     border: 1px solid hsla(278, 84%, 66%, 0.055);
@@ -122,6 +134,7 @@ button:active{
 /* for screens => 481px */
 @media (min-width : 481px) {
     
+    /* new structure : grid */
     .grid-container{
         display: grid;
         grid-template-rows: 9.2vw 1fr 4vw;
@@ -131,6 +144,7 @@ button:active{
         padding-top: 6vw;
     }
 
+    /* resize */
     img{
         height: 5.5vw;
     }
@@ -139,6 +153,7 @@ button:active{
         font-size: 1vw;
     }
 
+    /* new properties */
     .popup-container{
         width: 30%;
         height: 8vw;    
@@ -148,16 +163,19 @@ button:active{
         border-bottom-right-radius: 2vw;
     }
 
+    /* resize */
     .qoute{
         font-size: 1.5vw;
     }
 
+    /* new properties */
     button{
         font-size: 1.2vw;
         height: 4vw;
         width: 8vw;
     }
 
+    /* new event : hover */
     button:hover{
         background-color: hsla(278, 84%, 57%, 0.507);
         border: 1px solid hsla(278, 84%, 66%, 0.055);
@@ -169,19 +187,23 @@ button:active{
 /* for screens => 601px */
 @media (min-width : 601px) {
 
+    /* resize */
     .attribution{
         font-size: 0.5rem;
     }
 
+    /* resize */
     .popup-container{
         width: 25%;
         height: 6vw;    
     }
 
+    /* resize */
     .qoute{
         font-size: 1.2vw;
     }
 
+    /* resize */
     button{
         font-size: 1vw;
         height: 3vw;
@@ -194,34 +216,41 @@ button:active{
 /* for screens => 901px */
 @media (min-width : 901px) {
 
+    /* new placement properties */
     .grid-container{
         display: grid;
         grid-template-rows: 12% 1fr 5%;
     }
     
+    /* resize */
     nav{
         margin-left: 4rem;
         margin-right: 4rem;
     }
 
+    /* resize */
     .grid-item2{
         margin-left: 4.8rem;
         margin-right: 4.8rem;
         padding-top: 5vw;
     }
 
+    /* resize */
     img{
         height: 3rem;
     }
 
+    /* resize */
     .attribution{
         font-size: 1vw;
     }
 
+    /* resize */
     footer{
         margin-top: 1vw;
     }
 
+    /* border radius resize */
     .popup-container{   
         border-top-right-radius: 2vw;
         border-top-left-radius: 2vw;

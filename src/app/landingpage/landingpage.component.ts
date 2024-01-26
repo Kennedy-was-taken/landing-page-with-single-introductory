@@ -9,6 +9,7 @@ import { PopupService } from '../popup.service';
 
 export class LandingpageComponent implements OnInit{
 
+  //injecting the popup service
   constructor(private popup : PopupService){}
 
   public isFeedBackVisible? : Boolean;

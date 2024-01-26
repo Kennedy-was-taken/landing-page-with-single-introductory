@@ -1,3 +1,4 @@
+/* fonts to be used */
 @font-face {
     font-family: 'Poppings';
     src: url('../../assets/fonts/Poppins/Poppins-Light.ttf');
@@ -8,28 +9,33 @@
     src: url('../../assets/fonts/Open_Sans/static/OpenSans-Light.ttf');
 }
 
+/* structure format */
 .container, main{
     display: flex; 
     flex-direction: column;   
 }
+
 
 img{
     width: 100%;
     padding-bottom: 1rem;
 }
 
+/* structure format */
 .right-container{
     display: flex; 
     flex-direction: column; 
     padding-top: 3rem;
 }
 
+/* global properties */
 p{
     color: white;
     text-align: center;
     word-wrap: normal;
 }
 
+/* individual properties */
 header > p{
     font-size: 7vw;
     font-family: 'Poppings';
@@ -39,6 +45,7 @@ header > p{
     margin: 0px;
 }
 
+/* individual properties */
 section > p{
     font-family: 'Open-sans';
     padding-left: 0.4rem;
@@ -47,11 +54,13 @@ section > p{
     margin-bottom: 2rem;
 }
 
+/* structure format */
 .button-container{
     display: flex;
     justify-content: center;
 }
 
+/* button properties */
 button{
     border: 0px solid;
     border-radius: 4rem;
@@ -62,17 +71,20 @@ button{
     font-size: 3.5vw;
 }
 
+/* button event : click */
 button:active{
     background-color: var(--Soft-Magenta);
     color: white;
 }
 
+/* structure properties */
 .icon-container{
     display: flex;
     justify-content: center;
     margin-top: 12vw;
 }
 
+/* icon properties */
 fa-icon{
     display: flex;
     flex-direction: row;
@@ -87,11 +99,13 @@ fa-icon{
     margin-right: 3vw;
 }
 
+/* icon event : click */
 fa-icon:active{
     color: var(--Soft-Magenta);
     border: 1px solid var(--Soft-Magenta);
 }
 
+/* positioning and content properties */
 .form{
     z-index: 2;
     width: 100%;
@@ -109,16 +123,19 @@ fa-icon:active{
 /* for screens => 481px */
 @media (min-width : 481px)  {
     
+    /* new structure format */
     .container{
         display: grid;
         grid-template-rows: 92% 8%;
     }
 
+    /* new structure format */
     main{
         display: grid;
         grid-template-columns: 60% 40%;
     }
 
+    /* new format */
     .right-container{
         padding-top: 2rem;
         padding-left: 1rem;
@@ -126,20 +143,24 @@ fa-icon:active{
         padding-bottom: 1rem;
     }
 
+    /* new format */
     img{
         margin-bottom: 0px;
     }
 
+    /* new txt position */
     p{
         text-align: start;
     }
 
+    /* new individual properties */
     header > p{
         font-size: 2.1vw;
         padding-left: 0px;
         padding-right: 0px;
     }
     
+    /* new individual properties */
     section > p{
         font-size: 1.1vw;
         margin-bottom: 1rem;
@@ -147,12 +168,14 @@ fa-icon:active{
         padding-right: 0px;
     }
 
+    /* new format */
     button{
         width: 14vw;
         height: 3.5vw;      
         font-size: 1.2vw;
     }
 
+    /* new button event : hover */
     button:hover{
         background-color: var(--Soft-Magenta);
         color: white;
@@ -171,6 +194,7 @@ fa-icon:active{
         justify-content: end;
     }
     
+    /* new icon properties */
     fa-icon{
         font-size: 1.2vw;
         height: 2.5vw;
@@ -179,6 +203,7 @@ fa-icon:active{
         border: 1px solid white;
     }
 
+    /* new icon event : hover */
     fa-icon:hover{        
         color: var(--Soft-Magenta);
         border: 1px solid var(--Soft-Magenta);
@@ -190,12 +215,6 @@ fa-icon:active{
     }
 
 }
-
-/* for screens => 601px */
-/* @media (min-width : 601px) {
-
-
-} */
 
 
 /* for screens => 901px */
