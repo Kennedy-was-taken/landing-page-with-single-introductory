@@ -12,7 +12,7 @@ export class LandingpageComponent implements OnInit{
   //injecting the popup service
   constructor(private popup : PopupService){}
 
-  public isFeedBackVisible? : Boolean;
+  public isFeedBackVisible! : Boolean;
 
   private timeId : any;
 
@@ -21,23 +21,33 @@ export class LandingpageComponent implements OnInit{
 
     clearTimeout(this.timeId); // Clear the scheduled timeout
     this.isFeedBackVisible = false;
+    this.popup.setFeedBackVisibility(this.isFeedBackVisible);
 
   }
 
   ngOnInit(): void {
 
     this.isFeedBackVisible = this.popup.getFeedBackVisibility();
-
     if(this.isFeedBackVisible === true){
       
-      // Set a timeout to hide the element after 5 secs
-      this.timeId = setTimeout(() => {
+      this.popUp();
+
+    }
+  }
+
+  async popUp() : Promise<void> {
+    
+      await new Promise<void>(resolve => {
+
+        // Set a timeout to hide the element after 2.5 secs
+        this.timeId = setTimeout(() => {
           this.isFeedBackVisible = false;
-        }, 5 * 1000);
+          resolve();
+        }, 2.5 * 1000);
+      });
 
       this.popup.setFeedBackVisibility(this.isFeedBackVisible);
 
-    }
   }
   
 }
